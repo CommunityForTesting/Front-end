@@ -1,0 +1,72 @@
+.login-title {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 15%;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 1.5rem;
+  border-bottom: 0.1vh solid black;
+}
+
+.loginbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94%;
+  height: 40vh;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  flex-direction: column;
+  background-color: white;
+  .input-box {
+    display: flex;
+    flex-direction: row;
+    .id {
+      display: flex;
+      width: 40vh;
+      align-items: center;
+      .text {
+        font-family: "Spoqa Han Sans Neo", "sans-serif";
+        font-size: 1rem;
+        width: 15%;
+        text-align: center;
+      }
+      .input {
+        margin-left: 3vh;
+      }
+    }
+    .pw {
+      display: flex;
+      width: 40vh;
+      align-items: center;
+      .text {
+        font-family: "Spoqa Han Sans Neo", "sans-serif";
+        font-size: 1rem;
+        width: 15%;
+        text-align: center;
+      }
+      .input {
+        margin-left: 3vh;
+      }
+    }
+    .login-button {
+      background-color: gray;
+      color: white;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+    }
+  }
+  .inquiry {
+    width: 40vh;
+    margin-top: 3vh;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .inquiry-text {
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.search-result {
+  width: 100%;
+  margin-top: 2vh;
+  height: 8vh;
+  display: flex;
+  align-items: flex-end;
+  .search-string {
+    margin-left: 4vh;
+    display: flex;
+    font-weight: bold;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-size: 2rem;
+  }
+  .result-string {
+    display: flex;
+    margin-left: 2vh;
+    font-size: 1.5rem;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+  }
+}

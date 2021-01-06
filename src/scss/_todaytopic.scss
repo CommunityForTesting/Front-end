@@ -1,0 +1,25 @@
+.today-topic {
+  display: flex;
+  width: 94%;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  flex-direction: column;
+  .title {
+    width: 15%;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-size: 1.5rem;
+    border-bottom: 0.1vh solid black;
+  }
+  .versus {
+    background-color: white;
+    display: flex;
+    width: 100%;
+    margin-top: 2%;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    font-size: 5rem;
+  }
+}

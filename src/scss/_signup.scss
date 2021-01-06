@@ -1,0 +1,48 @@
+.signup-title {
+  display: flex;
+  align-self: flex-start;
+  justify-self: flex-start;
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 15%;
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
+  font-size: 1.5rem;
+  border-bottom: 0.1vh solid black;
+}
+
+.signup-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 94%;
+  height: 40vh;
+  margin-top: 2%;
+  margin-left: 3%;
+  margin-right: 3%;
+  flex-direction: column;
+  background-color: white;
+  .signup-input {
+    width: 45vh;
+  }
+  .e-mail {
+    display: flex;
+    width: 45vh;
+    flex-direction: row;
+    .e-mail-user {
+      display: flex;
+      width: 25vh;
+    }
+    .e-mail-com {
+      margin-left: 2vh;
+      width: 18vh;
+    }
+  }
+  .signup-button {
+    display: flex;
+    width: 45vh;
+    margin-top: 3vh;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    color: white;
+    background-color: gray;
+  }
+}
