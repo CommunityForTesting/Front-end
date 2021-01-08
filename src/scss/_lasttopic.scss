@@ -4,36 +4,41 @@
   margin-top: 2%;
   margin-left: 3%;
   margin-right: 3%;
-  flex-direction: column;
-  align-items: center;
-  .title {
-    align-self: flex-start;
-    width: 15%;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
-    font-size: 1.5rem;
-    margin-bottom: 2%;
-    border-bottom: 0.1vh solid black;
-  }
-  .last-topic-box {
+  justify-content: space-between;
+  .prev-topic {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 6vh;
-    margin-bottom: 1%;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
-    background-color: white;
-    font-size: 1.5rem;
-  }
-  .add-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 6vh;
-    margin-bottom: 1%;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
-    background-color: white;
-    font-size: 1.5rem;
+    width: 45%;
+    flex-direction: column;
+    .title {
+      align-self: flex-start;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-size: 1.5rem;
+      color: $sub-color;
+      font-weight: bold;
+      margin-bottom: 1%;
+    }
+    .last-topic-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 7vh;
+      margin-bottom: 1%;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-weight: bold;
+      color: $sub-color;
+      background-color: white;
+      font-size: 1.5rem;
+    }
+    .add-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 7vh;
+      margin-bottom: 1%;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      color: #1f2f40 !important;
+      background-color: white;
+      font-size: 1.5rem;
+    }
   }
 }

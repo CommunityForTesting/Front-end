@@ -1,13 +1,13 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import Header from 'View/component/Header';
+import React from "react";
+import { Grid } from "@material-ui/core";
+import Header from "View/component/Header";
 
-function AccountInquiry(){
+function AccountInquiry() {
   return (
     <Grid>
-        <Header></Header>
+      <Header></Header>
     </Grid>
   );
-};
+}
 
 export default AccountInquiry;

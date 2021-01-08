@@ -1,18 +1,18 @@
 .container-h {
-  background-color: gray;
+  background-color: #829ebf;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 200vh;
   .container-box {
-    background-color: #e2e4ee;
-    width: 80%;
+    background-color: #829ebf;
+    width: 60%;
     height: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     svg {
-      font-size: 3rem;
+      font-size: 1.4rem;
     }
   }
 }

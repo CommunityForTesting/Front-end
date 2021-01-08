@@ -22,24 +22,24 @@
   flex-direction: column;
   background-color: white;
   .signup-input {
-    width: 45vh;
+    width: 23vw;
   }
   .e-mail {
     display: flex;
-    width: 45vh;
+    width: 23vw;
     flex-direction: row;
     .e-mail-user {
       display: flex;
-      width: 25vh;
+      width: 23vw;
     }
     .e-mail-com {
-      margin-left: 2vh;
-      width: 18vh;
+      margin-left: 1vw;
+      width: 9vw;
     }
   }
   .signup-button {
     display: flex;
-    width: 45vh;
+    width: 23vw;
     margin-top: 3vh;
     font-family: "Spoqa Han Sans Neo", "sans-serif";
     color: white;

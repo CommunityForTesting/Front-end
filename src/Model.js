@@ -1,11 +1,7 @@
-import React from 'react';
+import React from "react";
 
-function Model(){
-  return (
-    <>
-
-    </>
-  );
-};
+function Model() {
+  return <></>;
+}
 
 export default Model;

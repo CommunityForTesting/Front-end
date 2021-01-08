@@ -1,25 +1,95 @@
 .today-topic {
   display: flex;
   width: 94%;
-  margin-top: 2%;
+  margin-top: 5%;
   margin-left: 3%;
   margin-right: 3%;
   flex-direction: column;
-  .title {
-    width: 15%;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
-    font-size: 1.5rem;
-    border-bottom: 0.1vh solid black;
-  }
-  .versus {
-    background-color: white;
+  .popular-post-button {
     display: flex;
     width: 100%;
-    margin-top: 2%;
-    height: 30vh;
-    align-items: center;
-    justify-content: center;
+    .popular-post-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 8vh;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-size: 1.5rem;
+      font-weight: bold;
+      background-color: white;
+    }
+  }
+  .title {
+    width: 15%;
+    margin-bottom: 1%;
     font-family: "Spoqa Han Sans Neo", "sans-serif";
-    font-size: 5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1f2f40 !important;
+  }
+  .today-topic-info {
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    background-color: white;
+    justify-content: center;
+    .versus {
+      display: flex;
+      align-items: center;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      color: #1f2f40 !important;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .today-counts {
+      margin-left: 2%;
+      margin-right: 2%;
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .today-comments {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #829ebf !important;
+      }
+      .today-likes {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #829ebf !important;
+      }
+      .today-points {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #829ebf !important;
+      }
+    }
+
+    .time {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-size: 3rem;
+      font-weight: bold;
+      color: #cf5f59;
+    }
+    .count {
+      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #375472 !important;
+    }
   }
 }
