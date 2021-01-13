@@ -7,10 +7,12 @@
   width: 15%;
   font-family: "Spoqa Han Sans Neo", "sans-serif";
   font-size: 1.5rem;
-  border-bottom: 0.1vh solid black;
+  font-weight: bold;
+  color: $sub-color;
+  border-bottom: 2px solid $sub-color;
 }
 
-.signup-box {
+.signup-input {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,28 +23,35 @@
   margin-right: 3%;
   flex-direction: column;
   background-color: white;
-  .signup-input {
-    width: 23vw;
+  .signup-input-pw,
+  .signup-input-pwcheck {
+    width: 26vw;
+    margin-bottom: 0.5vh;
   }
-  .e-mail {
+  .email {
     display: flex;
-    width: 23vw;
+    justify-self: center;
+    align-items: flex-end;
     flex-direction: row;
-    .e-mail-user {
-      display: flex;
-      width: 23vw;
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    margin-bottom: 0.5vh;
+    .email-id {
+      width: 15vw;
+      margin-right: 0.5vw;
     }
-    .e-mail-com {
-      margin-left: 1vw;
+    .email-domain {
       width: 9vw;
+      margin-left: 0.5vw;
+    }
+    .email-at {
+      width: 1vw;
     }
   }
   .signup-button {
-    display: flex;
-    width: 23vw;
+    width: 26vw;
     margin-top: 3vh;
     font-family: "Spoqa Han Sans Neo", "sans-serif";
     color: white;
-    background-color: gray;
+    background-color: $main-color;
   }
 }

@@ -14,22 +14,9 @@ const Header = () => {
     <div className="header">
       <Grid className="container">
         <Button className="home">
-          <Link to="./">Title</Link>
+          <Link to="./">하루토론</Link>
         </Button>
-        <Grid className="search">
-          <Input
-            onInput={(e) => {
-              e.target.value
-                ? setSearchInput("./search?input=" + e.target.value)
-                : setSearchInput();
-            }}
-          ></Input>
-          <IconButton>
-            <Link to={SearchInput}>
-              <SearchIcon />
-            </Link>
-          </IconButton>
-        </Grid>
+        <Button className="topic-vote">다음 주제 투표</Button>
         {loginCheck ? (
           <Grid className="user-info">
             <div className="username">{username}</div>

@@ -6,3 +6,4 @@ export { default as Signup } from "./View/pages/Signup";
 export { default as AccountInquiry } from "./View/pages/AccountInquiry";
 export { default as Mypage } from "./View/pages/Mypage";
 export { default as Post } from "./View/pages/Post";
+export { default as Comment } from "./View/pages/Comment";

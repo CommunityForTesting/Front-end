@@ -5,6 +5,19 @@ import MessageIcon from "@material-ui/icons/Message";
 import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
 
 function TodayTopicBox(props) {
+  const AnimationBoxArr = [];
+  for (let i = 0; i < 8; i += 1) {
+    AnimationBoxArr.push(
+      <Box
+        className="animation-box"
+        style={{
+          animationDelay: `${i}s`,
+        }}
+        key={i}
+      ></Box>
+    );
+  }
+
   const comments = 121;
   const likes = 423;
   const points = "235,231";
@@ -21,35 +34,27 @@ function TodayTopicBox(props) {
   }, [time]);
 
   return (
-    <Grid className="today-topic-info">
-      <Box className="versus">{props.todayTopic}</Box>
-      <Grid className="today-counts">
-        <Grid className="today-comments">
-          <div>
-            <Icon>
-              <MessageIcon />
-            </Icon>
-          </div>
-          <div className="count">{comments}</div>
+    <Grid className="today-topic-container">
+      <Box className="today-topic-box">
+        {AnimationBoxArr}
+        <Box className="today-topic-button">
+          <Button className="today-topic-span">토론 참여하기</Button>
+        </Box>
+      </Box>
+      <Grid className="today-topic-info">
+        <Grid className="field-box-left">
+          <Box className="field-title">갤럭시</Box>
+          <Box className="field-post">게시글 수 : 999개</Box>
+          <Box className="field-likes">좋아요 : 123,345개</Box>
+          {props.popularPost}
         </Grid>
-        <Grid className="today-likes">
-          <div>
-            <Icon>
-              <ThumbUpIcon />
-            </Icon>
-          </div>
-          <div className="count">{likes}</div>
-        </Grid>
-        <Grid className="today-points">
-          <div>
-            <Icon>
-              <MonetizationOnIcon />
-            </Icon>
-          </div>
-          <div className="count">{points}</div>
+        <Grid className="field-box-right">
+          <Box className="field-title">아이폰</Box>
+          <Box className="field-post">게시글 수 : 999개</Box>
+          <Box className="field-likes">좋아요 : 123,345개</Box>
+          {props.popularPost}
         </Grid>
       </Grid>
-      <div className="time">{time}</div>
     </Grid>
   );
 }

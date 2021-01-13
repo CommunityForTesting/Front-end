@@ -10,7 +10,7 @@ function PostBox(props) {
         if (props.history) props.history.push(url);
       }}
     >
-      <div className="popular-post-box">{props.title}</div>
+      <div className="popular-post-box"></div>
     </Button>
   );
 }

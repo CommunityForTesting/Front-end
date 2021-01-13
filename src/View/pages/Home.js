@@ -11,8 +11,7 @@ const Home = ({ history }) => {
     <Grid>
       <Header></Header>
       <Container>
-        <TodayTopic todayTopic={todayTopic} history={history}></TodayTopic>
-        <LastTopic></LastTopic>
+        <TodayTopic></TodayTopic>
       </Container>
     </Grid>
   );

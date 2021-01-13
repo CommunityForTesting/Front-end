@@ -10,6 +10,7 @@ import {
   AccountInquiry,
   Mypage,
   Post,
+  Comment,
 } from "pages";
 
 function App() {
@@ -22,8 +23,9 @@ function App() {
         <Route path="/search" component={Search} />
         <Route path="/signup" component={Signup} />
         <Route path="/accountInquiry" component={AccountInquiry} />
-        <Route path="/Mypage" component={Mypage} />
+        <Route path="/mypage" component={Mypage} />
         <Route path="/post" component={Post} />
+        <Route path="/comment" component={Comment} />
         <Route component={NotFound} />
       </Switch>
     </div>

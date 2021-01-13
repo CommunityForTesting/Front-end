@@ -3,10 +3,11 @@
   align-content: center;
   justify-content: center;
   width: 100%;
-  height: 7vh;
-  background-color: white;
+  height: 80px;
+  background-color: #130f0e;
+
   .container {
-    width: 80%;
+    width: 71%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -15,21 +16,26 @@
       display: flex;
       align-items: center;
       font-size: 1.5rem;
-      font-family: "Spoqa Han Sans Neo", "sans-serif";
-      color: #375472 !important;
+      font-family: "NotoSansKR-Bold";
+      color: white !important;
     }
-    .search {
-      display: flex;
+    .topic-vote {
+      color: white;
       margin-left: auto;
-      align-items: center;
-    }
-    .login {
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 1%;
-      font-family: "Spoqa Han Sans Neo", "sans-serif";
+      font-family: "NotoSansKR-Bold";
+      font-size: 1.2rem;
+    }
+    .login {
+      height: 100%;
+      display: flex;
+      margin-left: 2%;
+      align-items: center;
+      justify-content: center;
+      font-family: "NotoSansKR-Bold";
       font-size: 1.2rem;
     }
     .user-info {
@@ -37,7 +43,7 @@
       align-items: center;
       justify-content: center;
       .username {
-        font-family: "Spoqa Han Sans Neo", "sans-serif";
+        font-family: "NotoSansKR-Bold";
         font-weight: bold;
         font-size: 1.5rem;
       }
@@ -45,7 +51,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: "Spoqa Han Sans Neo", "sans-serif";
+        font-family: "NotoSansKR-Bold";
         margin-left: 1%;
         .point-text {
           font-size: 1.1rem;
