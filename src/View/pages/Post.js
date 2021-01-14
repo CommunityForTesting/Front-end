@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import Header from "View/component/Header";
-import Container from "View/component/Container";
+import PageFrame from "View/component/PageFrame";
 import PostBox from "View/component/PostBox";
 import queryString from "query-string";
 
@@ -95,19 +94,16 @@ function Post({ location }) {
   ));
 
   return (
-    <Grid>
-      <Header></Header>
-      <Container>
+    <PageFrame>
+      <Grid>
         <Grid>
-          <Grid>
-            <div>{post.title}</div>
-            <div>{post.updateTime ? post.update_date : post.create_date}</div>
-          </Grid>
-          <div>{post.content}</div>
+          <div>{post.title}</div>
+          <div>{post.updateTime ? post.update_date : post.create_date}</div>
         </Grid>
-        <Grid>{commentBoxArray}</Grid>
-      </Container>
-    </Grid>
+        <div>{post.content}</div>
+      </Grid>
+      <Grid>{commentBoxArray}</Grid>
+    </PageFrame>
   );
 }
 

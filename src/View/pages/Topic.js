@@ -1,13 +1,9 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import Header from "View/component/Header";
+import PageFrame from "View/component/PageFrame";
 
 function Topic() {
-  return (
-    <Grid>
-      <Header></Header>
-    </Grid>
-  );
+  return <PageFrame></PageFrame>;
 }
 
 export default Topic;

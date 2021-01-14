@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Grid } from "@material-ui/core";
-import Header from "View/component/Header";
-import Container from "View/component/Container";
+import PageFrame from "View/component/PageFrame";
 import { Editor } from "react-draft-wysiwyg";
 import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import { EditorState, convertToRaw, ContentState } from "draft-js";
@@ -22,15 +20,9 @@ function Comment() {
   }, [editorState]);
 
   return (
-    <Grid>
-      <Header></Header>
-      <Container>
-        <Editor
-          editorState={editorState}
-          onEditorStateChange={setEditorState}
-        />
-      </Container>
-    </Grid>
+    <PageFrame>
+      <Editor editorState={editorState} onEditorStateChange={setEditorState} />
+    </PageFrame>
   );
 }
 

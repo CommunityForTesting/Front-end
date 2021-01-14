@@ -1,7 +1,6 @@
 import React from "react";
 import { Grid, Box } from "@material-ui/core";
-import Header from "View/component/Header";
-import Container from "View/component/Container";
+import PageFrame from "View/component/PageFrame";
 
 function AccountInquiry() {
   const BoxArr = [];
@@ -19,19 +18,7 @@ function AccountInquiry() {
     );
   }
 
-  return (
-    <Grid>
-      <Header></Header>
-      <Grid className="test-container">
-        <Box className="for-test">
-          {BoxArr}
-          <Box className="test-button">
-            <span className="button-span">토론 참여하기</span>
-          </Box>
-        </Box>
-      </Grid>
-    </Grid>
-  );
+  return <PageFrame></PageFrame>;
 }
 
 export default AccountInquiry;
