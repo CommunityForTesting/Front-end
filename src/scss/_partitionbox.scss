@@ -1,0 +1,28 @@
+.partition-box {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-content: center;
+  margin-bottom: 1%;
+  .partition-text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "NotoSansKR-Bold";
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1%;
+  }
+  .partition-line {
+    flex: 1 1;
+    margin: auto;
+    border-bottom: solid 3px;
+  }
+  .partition-icon {
+    margin: auto;
+    margin-left: 1%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+}
