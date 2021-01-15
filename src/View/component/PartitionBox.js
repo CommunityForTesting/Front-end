@@ -1,6 +1,6 @@
 import React from "react";
 import LaunchIcon from "@material-ui/icons/Launch";
-import { Grid, Box, Button } from "@material-ui/core";
+import { Grid, Box } from "@material-ui/core";
 
 function PartitionBox(props) {
   return (

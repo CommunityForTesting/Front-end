@@ -1,11 +1,9 @@
-import { React, useState } from "react";
-import { Grid, Input, IconButton, Button } from "@material-ui/core";
-import SearchIcon from "@material-ui/icons/Search";
+import { React } from "react";
+import { Grid, IconButton, Button } from "@material-ui/core";
 import SettingsIcon from "@material-ui/icons/Settings";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [SearchInput, setSearchInput] = useState();
   let loginCheck = false;
   const username = "닉네임";
   const userpoint = "123456";

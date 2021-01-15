@@ -3,4 +3,46 @@
   width: 100%;
   margin-top: 5%;
   flex-direction: column;
+  .last-topic-link {
+    font-family: "NotoSansKR-Bold";
+    margin-left: auto;
+  }
+  .last-topic-box {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 2%;
+    height: 7vh;
+    background-color: white;
+    margin-bottom: 1%;
+    border: 1px solid #0000002d;
+    font-family: "NotoSansKR-Bold";
+    .last-field-box {
+      margin-right: 1%;
+      width: 16%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .winner-icon {
+        width: 1.5em;
+        height: 1.5em;
+        background-image: url("../golden_crown.svg");
+        background-repeat: no-repeat;
+      }
+      .loser-icon {
+        width: 1em;
+        height: 1em;
+      }
+    }
+    .with-icon {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1rem;
+      .icon-with-count {
+        margin-left: 15%;
+      }
+    }
+  }
 }

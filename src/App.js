@@ -11,6 +11,7 @@ import {
   Mypage,
   Post,
   Comment,
+  TodayTopic,
 } from "pages";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/mypage" component={Mypage} />
         <Route path="/post" component={Post} />
         <Route path="/comment" component={Comment} />
+        <Route path="/todaytopic" component={TodayTopic} />
         <Route component={NotFound} />
       </Switch>
     </div>

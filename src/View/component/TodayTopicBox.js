@@ -1,8 +1,5 @@
 import { React, useState, useEffect } from "react";
-import { Grid, Box, Icon, Button } from "@material-ui/core";
-import ThumbUpIcon from "@material-ui/icons/ThumbUp";
-import MessageIcon from "@material-ui/icons/Message";
-import MonetizationOnIcon from "@material-ui/icons/MonetizationOn";
+import { Grid, Box, Button } from "@material-ui/core";
 
 function TodayTopicBox(props) {
   const AnimationBoxArr = [];
@@ -32,7 +29,6 @@ function TodayTopicBox(props) {
   useEffect(() => {
     setInterval(countTime, 1000);
   }, [time]);
-
   return (
     <Grid className="today-topic-container">
       <Box className="today-topic-box">
