@@ -13,7 +13,7 @@ const LastTopicBox = (props) => {
       opacity: "0.5",
     },
     likes: {
-      fontSize: "1.0rem",
+      fontSize: "1rem",
       fontFamily: "NotoSansKR-Regular",
       color: "#131313",
       opacity: "0.5",

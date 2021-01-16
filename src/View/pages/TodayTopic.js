@@ -39,7 +39,7 @@ function TodayTopic() {
 
   return (
     <PageFrame>
-      <div className="title-box">
+      <div className="today-title-box">
         {leftBarArr}
         {rightBarArr}
         <div className="title-text">갤럭시</div>
