@@ -21,6 +21,10 @@ function TodayTopicBox(props) {
   const tmpTime = new Date().toLocaleTimeString().slice(2);
   const [time, setTime] = useState(tmpTime);
 
+  const moveToTopic = () => {
+    props.history.push("./todaytopic");
+  };
+
   const countTime = () => {
     const tmpTime = new Date().toLocaleTimeString().slice(2);
     setTime(tmpTime);
@@ -33,7 +37,7 @@ function TodayTopicBox(props) {
     <Grid className="today-topic-container">
       <Box className="today-topic-box">
         {AnimationBoxArr}
-        <Box className="today-topic-button">
+        <Box className="today-topic-button" onClick={moveToTopic}>
           <Button className="today-topic-span">토론 참여하기</Button>
         </Box>
       </Box>

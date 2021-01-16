@@ -7,7 +7,7 @@ const Home = ({ history }) => {
   const todayTopic = "아이폰 VS 갤럭시";
   return (
     <PageFrame>
-      <TodayTopicCom></TodayTopicCom>
+      <TodayTopicCom history={history}></TodayTopicCom>
       <PopularLastTopic></PopularLastTopic>
     </PageFrame>
   );

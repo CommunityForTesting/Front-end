@@ -17,6 +17,7 @@ const TodayTopicCom = (props) => {
       <TodayTopicBox
         todayTopic={props.todayTopic}
         popularPost={arr}
+        history={props.history}
       ></TodayTopicBox>
     </Grid>
   );
