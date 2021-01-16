@@ -3,12 +3,13 @@
   width: 100%;
   margin-top: 5%;
   flex-direction: column;
+  font-family: "NotoSansKR-Bold", sans-serif;
 }
 
 .today-topic-container {
   display: flex;
   width: 100%;
-  height: 32vw;
+  height: 65vh;
   justify-content: center;
   .today-topic-info {
     z-index: 11;
@@ -20,32 +21,32 @@
     display: flex;
     justify-content: space-between;
     align-content: center;
-    .field-box-left {
+    .field-box-left,
+    .field-box-right {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-content: flex-start;
       width: 50%;
       .field-title {
-        font-family: "NotoSansKR-Bold";
         font-size: 4rem;
         color: white;
         margin-bottom: 6%;
       }
       .field-post {
-        font-family: "NotoSansKR-Regular";
+        font-family: "NotoSansKR-Regular", sans-serif;
         font-size: 1rem;
         color: white;
       }
       .field-likes {
-        font-family: "NotoSansKR-Regular";
+        font-family: "NotoSansKR-Regular", sans-serif;
         font-size: 1rem;
         color: white;
         margin-bottom: 7%;
       }
       .popular-post-button {
-        font-family: "NotoSansKR-Bold";
-        font-size: 2vh;
+        font-size: 1rem;
+        font-family: "NotoSansKR-Regular", sans-serif;
         display: flex;
         justify-content: space-between;
         padding-left: 4%;
@@ -58,72 +59,33 @@
           display: flex;
           flex-direction: row;
           align-items: center;
-          font-size: 1rem;
+          font-size: 0.9rem;
           .icon-with-count {
             font-size: 1rem;
             margin-left: 10%;
           }
         }
+
         .popular-post-content {
-          font-size: 1.1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          .popular-post-title {
+            font-family: "NotoSansKR-Bold", sans-serif;
+            font-size: 1rem;
+          }
+          .popular-post-createtime {
+            font-size: 0.8rem;
+            opacity: 0.5;
+          }
         }
       }
     }
-    .field-box-right {
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      .field-title {
-        display: flex;
-        justify-content: flex-end;
-        align-content: center;
-        font-family: "NotoSansKR-Bold";
-        font-size: 4rem;
-        color: white;
-        margin-bottom: 6%;
-      }
-      .field-post {
-        display: flex;
-        justify-content: flex-end;
-        align-content: center;
-        font-family: "NotoSansKR-Regular";
-        font-size: 1rem;
-        color: white;
-      }
-      .field-likes {
-        display: flex;
-        justify-content: flex-end;
-        align-content: center;
-        font-family: "NotoSansKR-Regular";
-        font-size: 1rem;
-        color: white;
-        margin-bottom: 7%;
-      }
-      .popular-post-button {
-        font-family: "NotoSansKR-Bold";
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        padding-left: 4%;
-        padding-right: 3%;
-        background-color: white;
-        margin-bottom: 3%;
-        width: 80%;
-        height: 20%;
-        margin-left: auto;
-        .with-icon {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          font-size: 1rem;
-          .icon-with-count {
-            margin-left: 15%;
-          }
-        }
-        .popular-post-content {
-          font-size: 1.1rem;
-        }
-      }
+    .field-box-right .field-title,
+    .field-box-right .field-post,
+    .field-box-right .field-likes,
+    .field-box-right .popular-post-button {
+      margin-left: auto;
     }
   }
   .today-topic-box {
@@ -149,30 +111,30 @@
       animation: wave 8s linear infinite both;
       @keyframes wave {
         0% {
-          width: 90vw;
-          height: 80vh;
+          width: 130%;
+          height: 130%;
           opacity: 1;
           z-index: 1;
         }
 
         100% {
-          width: 8vw;
-          height: 7vh;
+          width: 13%;
+          height: 13%;
           z-index: 10;
           opacity: 0.3;
         }
       }
     }
     .today-topic-button {
-      z-index: 11;
+      z-index: 15;
       display: flex;
       align-items: center;
       justify-content: center;
       box-sizing: border-box;
-      width: 8vw;
-      height: 7vh;
+      width: 13%;
+      height: 13%;
       border: 5px solid transparent;
-      border-radius: 20vw;
+      border-radius: 15vw;
       overflow: hidden;
     }
     .today-topic-span {
@@ -181,7 +143,6 @@
       justify-content: center;
       width: 100%;
       height: 100%;
-      font-family: "NotoSansKR-Bold";
       font-size: 1rem;
       color: white;
       background-image: linear-gradient(

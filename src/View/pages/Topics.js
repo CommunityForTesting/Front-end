@@ -1,8 +1,8 @@
 import React from "react";
 import PageFrame from "View/component/PageFrame";
 
-function Topic() {
+function Topics() {
   return <PageFrame></PageFrame>;
 }
 
-export default Topic;
+export default Topics;

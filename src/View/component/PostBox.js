@@ -21,7 +21,10 @@ function PostBox(props) {
         <div>136</div>
         <MessageIcon className="icon-with-count" />
       </div>
-      <div className="popular-post-content">한국인이면 갤럭시 쓰자</div>
+      <div className="popular-post-content">
+        <div className="popular-post-title">한국인이면 갤럭시 쓰자</div>
+        <div className="popular-post-createtime">2021-01-14 12:42</div>
+      </div>
       <KeyboardArrowRightIcon className="post-link-button" />
     </Button>
   );
