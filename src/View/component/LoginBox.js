@@ -14,6 +14,7 @@ function LoginBox(props) {
   const [pw, setPw] = useState();
   const [url, setUrl] = useState("./login");
   const [autoLogin, setAutoLogin] = useState(false);
+
   useEffect(() => {
     if (id == "sini3181" && pw == "1234") {
       setResult(true);
@@ -38,6 +39,8 @@ function LoginBox(props) {
         label="비밀번호"
         className="pw-input"
         variant="outlined"
+        type="password"
+        name="password"
         onChange={(e) => {
           setPw(e.target.value);
         }}
@@ -69,7 +72,9 @@ function LoginBox(props) {
             fontSize: "1rem",
             color: "#598DDE",
           }}
+          to="./pwInquiry"
           className="inquiry-link"
+          onClick={() => window.scrollTo(0, 0)}
         >
           비밀번호를 잊으셨나요?
         </Link>
@@ -86,11 +91,13 @@ function LoginBox(props) {
           하루토론에 처음 오셨군요 이쪽으로 모시겠습니다.
         </div>
         <Link
+          to="./signup"
           style={{
             fontFamily: "NotoSansKR-Regular",
             fontSize: "1rem",
             color: "#598DDE",
           }}
+          onClick={() => window.scrollTo(0, 0)}
         >
           회원가입하기
         </Link>

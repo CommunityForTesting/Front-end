@@ -7,7 +7,7 @@ import {
   Search,
   NotFound,
   Signup,
-  AccountInquiry,
+  PwInquiry,
   Mypage,
   Post,
   Comment,
@@ -24,7 +24,7 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/search" component={Search} />
         <Route path="/signup" component={Signup} />
-        <Route path="/accountInquiry" component={AccountInquiry} />
+        <Route path="/pwInquiry" component={PwInquiry} />
         <Route path="/mypage" component={Mypage} />
         <Route path="/post" component={Post} />
         <Route path="/comment" component={Comment} />
