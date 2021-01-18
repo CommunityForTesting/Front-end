@@ -4,7 +4,7 @@
   margin-top: 5%;
   flex-direction: column;
   .last-topic-link {
-    font-family: "NotoSansKR-Bold";
+    font-family: "NotoSansKR-Bold", sans-serif;
     margin-left: auto;
   }
   .last-topic-box {
@@ -13,17 +13,18 @@
     width: 100%;
     padding-left: 3%;
     padding-right: 2%;
-    height: 7vh;
+    height: 9vh;
     background-color: white;
     margin-bottom: 1%;
     border: 1px solid #0000002d;
-    font-family: "NotoSansKR-Bold";
+    font-family: "NotoSansKR-Bold", sans-serif;
     .last-field-box {
       margin-right: 1%;
-      width: 16%;
+      width: 18%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      overflow: hidden;
       .winner-icon {
         width: 1.5em;
         height: 1.5em;

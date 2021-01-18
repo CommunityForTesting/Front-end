@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid } from "@material-ui/core";
+import { Grid, Button } from "@material-ui/core";
 import LastTopicBox from "./LastTopicBox";
 import PartitionBox from "View/component/PartitionBox";
 import { Link } from "react-router-dom";
@@ -13,11 +13,17 @@ const LastTopic = () => {
 
   return (
     <Grid className="last-topic">
-      <PartitionBox title="인기 이전 주제"></PartitionBox>
+      <PartitionBox title="인기 이전 주제" url="./topics"></PartitionBox>
       {LTB_Arr}
-      <Link className="last-topic-link" style={{ color: "black" }}>
-        이전 인기주제 더보기
-      </Link>
+      <Button className="last-topic-link">
+        <Link
+          to="./topics"
+          style={{ color: "black" }}
+          onClick={() => window.scrollTo(0, 0)}
+        >
+          이전 인기주제 더보기
+        </Link>
+      </Button>
     </Grid>
   );
 };

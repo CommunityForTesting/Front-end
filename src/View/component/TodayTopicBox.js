@@ -23,6 +23,7 @@ function TodayTopicBox(props) {
 
   const moveToTopic = () => {
     props.history.push("./todaytopic");
+    window.scrollTo(0, 0);
   };
 
   const countTime = () => {

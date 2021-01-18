@@ -2,14 +2,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 75%;
   margin-top: 5%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-bottom: 2vh;
   height: 18vh;
   background-color: black;
   overflow: hidden;
   border-radius: 5px;
+  .left-info {
+    font-family: "NotoSansKR-Regular";
+    font-size: 1rem;
+    color: white;
+  }
+  .right-info {
+    font-family: "NotoSansKR-Regular";
+    font-size: 1rem;
+    color: white;
+  }
   .title-text {
     margin-left: 5%;
     margin-right: 5%;
@@ -30,14 +41,14 @@
     @keyframes conflict-left {
       0% {
         background-color: #5339ff;
-        left: 0%;
+        left: -1%;
       }
-      92% {
+      80% {
         opacity: 0.9;
       }
       100% {
         background-color: #c53c71;
-        left: 50%;
+        left: 57%;
         opacity: 0;
       }
     }
@@ -50,16 +61,34 @@
     @keyframes conflict-right {
       0% {
         background-color: #ee3d3d;
-        left: 99.5%;
+        left: 100%;
       }
-      92% {
+      80% {
         opacity: 0.9;
       }
       100% {
         background-color: #c53c71;
-        left: 50%;
+        left: 43%;
         opacity: 0;
       }
+    }
+  }
+}
+.page-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 6vh;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-bottom: 3%;
+  .page-button {
+    width: auto;
+    font-family: "NotoSansKR-Regular";
+    font-size: 1rem;
+    svg {
+      font-size: 0.8rem;
     }
   }
 }

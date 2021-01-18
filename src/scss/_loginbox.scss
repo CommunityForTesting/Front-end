@@ -12,63 +12,55 @@
   border-bottom: 2px solid $sub-color;
 }
 
-.loginbox {
+.login-box {
+  box-sizing: border-box;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 94%;
-  height: 40vh;
-  margin-top: 2%;
-  margin-left: 3%;
-  margin-right: 3%;
+  padding: 2% 2% 0 2%;
+  width: 45%;
+  margin-top: 4%;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
   flex-direction: column;
   background-color: white;
-  .input-box {
-    display: flex;
-    flex-direction: row;
-    .id {
-      display: flex;
-      width: 20vw;
-      align-items: center;
-      .text {
-        font-family: "Spoqa Han Sans Neo", "sans-serif";
-        font-size: 1rem;
-        width: 15%;
-        text-align: center;
-      }
-      .input {
-        margin-left: 5%;
-      }
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  font-family: "NotoSansKR-Bold", "sans-serif";
+  .id-input,
+  .pw-input {
+    font-family: "NotoSansKR-Bold", "sans-serif";
+    width: 100%;
+    margin-top: 3%;
+  }
+  .auto-login {
+    .MuiTypography-body1 {
+      font-family: "NotoSansKR-Regular", "sans-serif";
+      font-size: 0.9rem;
     }
-    .pw {
-      display: flex;
-      width: 20vw;
-      align-items: center;
-      .text {
-        font-family: "Spoqa Han Sans Neo", "sans-serif";
-        font-size: 1rem;
-        width: 15%;
-        text-align: center;
-      }
-      .input {
-        margin-left: 5%;
-      }
-    }
-    .login-button {
-      background-color: $main-color;
-      color: white;
-      font-family: "Spoqa Han Sans Neo", "sans-serif";
+    .MuiIconButton-root {
+      font-size: 1rem;
     }
   }
-  .inquiry {
-    width: 20vw;
-    margin-top: 3vh;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
+  .login-button {
+    margin-top: 2%;
+    width: 100%;
+    font-family: "NotoSansKR-Regular", "sans-serif";
+    font-size: 1rem;
+    background: #598dde 0% 0% no-repeat padding-box;
+    border-radius: 24px;
+    color: white;
+  }
+  .singup-box {
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    width: 100%;
+    border-top: 1px solid #dedede;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    .inquiry-text {
-      font-family: "Spoqa Han Sans Neo", "sans-serif";
-    }
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2.5vh;
   }
 }

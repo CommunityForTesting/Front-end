@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import PageFrame from "View/component/PageFrame";
-import PostBox from "View/component/PostBox";
+import PopularPostBox from "View/component/PopularPostBox";
 import queryString from "query-string";
 
 function Post({ location }) {
@@ -90,7 +90,7 @@ function Post({ location }) {
   const comment = request_comment(query.post_id);
   const sorted_comment = sort_comment(comment);
   const commentBoxArray = sorted_comment.map((e) => (
-    <PostBox key={e.id} title={e.content}></PostBox>
+    <PopularPostBox key={e.id} title={e.content}></PopularPostBox>
   ));
 
   return (

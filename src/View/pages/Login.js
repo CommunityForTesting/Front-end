@@ -6,7 +6,6 @@ import queryString from "query-string";
 function Login({ location, history }) {
   return (
     <PageFrame>
-      <div className="login-title">로그인</div>
       <LoginBox></LoginBox>
     </PageFrame>
   );
