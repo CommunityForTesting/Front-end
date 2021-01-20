@@ -1,57 +1,38 @@
-.signup-title {
+.signup-box {
+  box-sizing: border-box;
   display: flex;
-  align-self: flex-start;
-  justify-self: flex-start;
-  margin-top: 2%;
-  margin-left: 3%;
-  width: 15%;
-  font-family: "Spoqa Han Sans Neo", "sans-serif";
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: $sub-color;
-  border-bottom: 2px solid $sub-color;
-}
-
-.signup-input {
-  display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  width: 94%;
-  height: 40vh;
-  margin-top: 2%;
-  margin-left: 3%;
-  margin-right: 3%;
+  padding: 2% 2% 0 2%;
+  width: 45%;
+  margin-top: 4%;
+  margin-left: 27.5%;
+  margin-right: 27.5%;
   flex-direction: column;
   background-color: white;
-  .signup-input-pw,
-  .signup-input-pwcheck {
-    width: 26vw;
-    margin-bottom: 0.5vh;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 8px;
+  font-family: "NotoSansKR-Regular", "sans-serif";
+  font-size: 1.1rem;
+  .level-default {
+    font-size: 1.2rem;
+    font-family: "NotoSansKR-Bold";
+    width: 18px;
+    color: rgba(19, 19, 19, 0.5);
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 8px;
   }
-  .email {
-    display: flex;
-    justify-self: center;
-    align-items: flex-end;
-    flex-direction: row;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
-    margin-bottom: 0.5vh;
-    .email-id {
-      width: 15vw;
-      margin-right: 0.5vw;
-    }
-    .email-domain {
-      width: 9vw;
-      margin-left: 0.5vw;
-    }
-    .email-at {
-      width: 1vw;
-    }
+  .level-selected {
+    font-size: 1.2rem;
+    font-family: "NotoSansKR-Bold";
+    width: 20px;
+    border-bottom: 4px solid black;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 4px;
   }
-  .signup-button {
-    width: 26vw;
-    margin-top: 3vh;
-    font-family: "Spoqa Han Sans Neo", "sans-serif";
-    color: white;
-    background-color: $main-color;
+  .MuiIconButton-root {
+    padding: 4px;
   }
 }

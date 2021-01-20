@@ -9,7 +9,7 @@ function PostContainer(props) {
           style={{
             display: "flex",
             flexDirection: "row",
-            marginBottom: "2vh",
+            marginBottom: "20px",
           }}
         >
           <div
@@ -23,12 +23,14 @@ function PostContainer(props) {
           </div>
           <Button
             style={{
-              width: "9vw",
+              width: "120px",
+              height: "45px",
               marginLeft: "auto",
               backgroundColor: "#598DDE",
               color: "white",
               borderRadius: "25px",
-              fontSize: "0.9rem",
+              fontSize: "1rem",
+              fontFamily: "NotoSansKR-Regular",
             }}
           >
             게시글 작성하기
@@ -38,7 +40,7 @@ function PostContainer(props) {
           style={{
             display: "flex",
             flexDirection: "row",
-            marginBottom: "2vh",
+            marginBottom: "10px",
           }}
         >
           <ButtonBase

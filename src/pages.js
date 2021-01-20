@@ -9,3 +9,4 @@ export { default as Post } from "./View/pages/Post";
 export { default as Comment } from "./View/pages/Comment";
 export { default as TodayTopic } from "./View/pages/TodayTopic";
 export { default as Topics } from "./View/pages/Topics";
+export { default as SetPw } from "./View/pages/SetPw";

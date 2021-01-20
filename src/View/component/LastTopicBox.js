@@ -11,6 +11,7 @@ const LastTopicBox = (props) => {
       fontFamily: "NotoSansKR-Bold",
       color: "#131313",
       opacity: "0.5",
+      marginRight: "12px",
     },
     likes: {
       fontSize: "1rem",
@@ -24,6 +25,7 @@ const LastTopicBox = (props) => {
       fontSize: "1.1rem",
       fontFamily: "NotoSansKR-Bold",
       color: "#131313",
+      marginRight: "12px",
     },
     likes: {
       fontSize: "1rem",
@@ -48,12 +50,12 @@ const LastTopicBox = (props) => {
       </div>
       <div style={{ fontSize: "1rem" }}>2021-01-11</div>
       <div className="with-icon">
-        <div>200,000</div>
         <ThumbUpIcon className="icon-with-count" />
+        <div>200,000</div>
       </div>
       <div className="with-icon">
-        <div>1,200</div>
         <MessageIcon className="icon-with-count" />
+        <div>1,200</div>
       </div>
       <KeyboardArrowRightIcon className="last-topic-button" />
     </Button>

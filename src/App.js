@@ -13,6 +13,7 @@ import {
   Comment,
   TodayTopic,
   Topics,
+  SetPw,
 } from "pages";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/comment" component={Comment} />
         <Route path="/todaytopic" component={TodayTopic} />
         <Route path="/topics" component={Topics} />
+        <Route path="/setpw" component={SetPw} />
         <Route component={NotFound} />
       </Switch>
     </div>
