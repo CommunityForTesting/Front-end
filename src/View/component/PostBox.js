@@ -19,20 +19,20 @@ function PostBox(props) {
             style={{
               display: "flex",
               flexDirection: "row",
-              marginBottom: "1vh",
+              marginBottom: "10px",
               alignItems: "center",
             }}
           >
             <div
               style={{
-                fontSize: "1rem",
+                fontSize: "1.2rem",
               }}
             >
               한국인이면 갤럭시 쓰자
             </div>
             <div
               style={{
-                marginLeft: "1vh",
+                marginLeft: "10px",
                 opacity: 0.6,
               }}
             >
@@ -43,6 +43,7 @@ function PostBox(props) {
             style={{
               display: "flex",
               flexDirection: "row",
+              alignItems: "center",
             }}
           >
             <div className="with-icon">

@@ -14,12 +14,12 @@ function PopularPostBox(props) {
       }}
     >
       <div className="with-icon">
-        <div>122,222</div>
         <ThumbUpIcon className="icon-with-count" />
+        <div>122,222</div>
       </div>
       <div className="with-icon">
-        <div>136</div>
         <MessageIcon className="icon-with-count" />
+        <div>136</div>
       </div>
       <div className="popular-post-content">
         <div className="popular-post-title">한국인이면 갤럭시 쓰자</div>

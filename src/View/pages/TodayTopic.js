@@ -46,6 +46,7 @@ function TodayTopic() {
         key="forward"
         onClick={() => {
           pageNumber < 6 ? setPageNumber(1) : setPageNumber(pageNumber - 5);
+          window.scrollTo(0, 0);
         }}
       >
         <ArrowBackIosIcon />
@@ -99,6 +100,7 @@ function TodayTopic() {
           pageNumber < maxPageNumber - 5
             ? setPageNumber(pageNumber + 5)
             : setPageNumber(maxPageNumber);
+          window.scrollTo(0, 0);
         }}
       >
         <ArrowForwardIosIcon />
@@ -149,7 +151,7 @@ function TodayTopic() {
           <div
             style={{
               fontFamily: "NotoSansKR-Regular",
-              fontSize: "0.9rem",
+              fontSize: "1rem",
             }}
           >
             남은 시간
@@ -185,15 +187,16 @@ function TodayTopic() {
         <div className="page-button-box">{pageNumberArr}</div>
         <Button
           style={{
-            width: "9vw",
-            height: "6vh",
+            width: "120px",
+            height: "45px",
             marginLeft: "auto",
             marginRight: "3%",
             marginBottom: "2%",
             backgroundColor: "#598DDE",
             color: "white",
             borderRadius: "25px",
-            fontSize: "0.9rem",
+            fontSize: "1rem",
+            fontFamily: "NotoSansKR-Regular",
           }}
         >
           게시글 작성하기

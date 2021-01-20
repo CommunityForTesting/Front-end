@@ -69,11 +69,10 @@ function LoginBox(props) {
         <Link
           style={{
             fontFamily: "NotoSansKR-Regular",
-            fontSize: "1rem",
+            fontSize: "1.1rem",
             color: "#598DDE",
           }}
           to="./pwInquiry"
-          className="inquiry-link"
           onClick={() => window.scrollTo(0, 0)}
         >
           비밀번호를 잊으셨나요?
@@ -94,7 +93,7 @@ function LoginBox(props) {
           to="./signup"
           style={{
             fontFamily: "NotoSansKR-Regular",
-            fontSize: "1rem",
+            fontSize: "1.1rem",
             color: "#598DDE",
           }}
           onClick={() => window.scrollTo(0, 0)}

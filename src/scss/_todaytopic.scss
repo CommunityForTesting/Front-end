@@ -3,22 +3,19 @@
   justify-content: space-between;
   align-items: center;
   width: 75%;
+  height: 160px;
   margin-top: 5%;
   margin-left: 12.5%;
   margin-right: 12.5%;
-  margin-bottom: 2vh;
-  height: 18vh;
+  margin-bottom: 16px;
   background-color: black;
   overflow: hidden;
   border-radius: 5px;
-  .left-info {
-    font-family: "NotoSansKR-Regular";
-    font-size: 1rem;
-    color: white;
-  }
+  .left-info,
   .right-info {
     font-family: "NotoSansKR-Regular";
-    font-size: 1rem;
+    font-size: 1.1rem;
+    width: 200px;
     color: white;
   }
   .title-text {
@@ -30,7 +27,7 @@
   }
   .today-topic-time {
     font-family: "NotoSansKR-Bold";
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: white;
   }
   .animation-bar-left {
@@ -79,7 +76,7 @@
   justify-content: center;
   align-items: center;
   width: 75%;
-  height: 6vh;
+  height: 30px;
   margin-left: 12.5%;
   margin-right: 12.5%;
   margin-bottom: 3%;
