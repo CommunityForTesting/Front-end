@@ -1,0 +1,47 @@
+.postedit-box {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2% 2% 0 2%;
+  width: 60%;
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  font-family: "NotoSansKR-Regular", "sans-serif";
+  font-size: 1.1rem;
+  .postedit-title {
+    font-size: 2rem;
+    font-family: "NotoSansKR-Bold", "sans-serif";
+    margin-bottom: 3%;
+  }
+  .postedit-field {
+    font-size: 1rem;
+    margin-bottom: 1%;
+  }
+  .postedit-field-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+    width: 100%;
+  }
+  .postedit-field-button {
+    font-family: "NotoSansKR-Regular", "sans-serif";
+    font-size: 1.1rem;
+    background-color: #efefef;
+    margin-right: 2%;
+    border-radius: 16px;
+  }
+  .postedit-title-input {
+    width: 100%;
+    margin-bottom: 2%;
+  }
+  .postedit-post-button {
+    font-family: "NotoSansKR-Regular", "sans-serif";
+    font-size: 1.1rem;
+    border-radius: 16px;
+  }
+}

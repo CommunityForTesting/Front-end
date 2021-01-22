@@ -22,7 +22,6 @@ function TodayTopic() {
     setInterval(countTime, 1000);
   });
   let pageNumberArr = [];
-  const url = "./todaytopic";
   const makePageNumberButton = (n) => {
     return (
       <Button

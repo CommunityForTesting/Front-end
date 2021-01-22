@@ -73,8 +73,8 @@ function SetPw() {
         </div>
         <Button
           style={{
-            width: "20%",
-            height: "6vh",
+            width: "60px",
+            height: "40px",
             fontFamily: "NotoSansKR-Regular",
             fontSize: "1rem",
             background: "#598DDE 0% 0% no-repeat padding-box",

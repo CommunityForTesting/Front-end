@@ -2,13 +2,13 @@ import React from "react";
 
 function NotFound() {
   const style_404 = {
-    fontSize: "5rem"
+    fontSize: "5rem",
   };
   const style_nf = {
-    fontSize: "3rem"
+    fontSize: "3rem",
   };
   const style_text = {
-    fontSize: "1rem"
+    fontSize: "1rem",
   };
 
   return (

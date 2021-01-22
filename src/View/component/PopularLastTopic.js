@@ -13,7 +13,7 @@ const LastTopic = () => {
 
   return (
     <Grid className="last-topic">
-      <PartitionBox title="인기 이전 주제" url="./topics"></PartitionBox>
+      <PartitionBox title="인기 이전 주제" url="./postedit"></PartitionBox>
       {LTB_Arr}
       <Button className="last-topic-link">
         <Link

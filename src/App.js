@@ -14,6 +14,7 @@ import {
   TodayTopic,
   Topics,
   SetPw,
+  PostEdit,
 } from "pages";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/todaytopic" component={TodayTopic} />
         <Route path="/topics" component={Topics} />
         <Route path="/setpw" component={SetPw} />
+        <Route path="/postedit" component={PostEdit} />
         <Route component={NotFound} />
       </Switch>
     </div>

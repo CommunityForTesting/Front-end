@@ -1,8 +1,8 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import { Grid, Button, TextField, Checkbox } from "@material-ui/core";
 import PageFrame from "View/component/PageFrame";
 
-const Level_1 = (props) => {
+const Level1 = (props) => {
   const setLevel = props.setLevel;
   const [checked, setChecked] = useState({
     checked_1: false,
@@ -142,7 +142,7 @@ const Level_1 = (props) => {
   );
 };
 
-const Level_2 = (props) => {
+const Level2 = (props) => {
   const [pw, setPw] = useState("");
   const [pwCheck, setPwCheck] = useState("");
   const [email, setEmail] = useState("");
@@ -175,6 +175,9 @@ const Level_2 = (props) => {
           fontSize: "1.2rem",
           fontFamily: "NotoSansKR-Regular",
         }}
+        onChange={(e) => {
+          setEmail(e.target.value);
+        }}
       >
         회원가입을 위해 이메일 인증이 진행됩니다.
       </div>
@@ -195,6 +198,9 @@ const Level_2 = (props) => {
         type="password"
         name="password"
         style={{ width: "100%", marginTop: "3%" }}
+        onChange={(e) => {
+          setPwCheck(e.target.value);
+        }}
       ></TextField>
       <div
         style={{
@@ -298,7 +304,7 @@ const Level_2 = (props) => {
   );
 };
 
-const Level_3 = (props) => {
+const Level3 = (props) => {
   const [pw, setPw] = useState("");
   const [pwCheck, setPwCheck] = useState("");
   const [email, setEmail] = useState("");
@@ -415,7 +421,7 @@ const Level_3 = (props) => {
   );
 };
 
-const Level_4 = (props) => {
+const Level4 = (props) => {
   return (
     <div
       style={{
@@ -473,13 +479,13 @@ function Signup() {
 
   const selectLevelComponent = () => {
     if (level === 1) {
-      return <Level_1 setLevel={setLevel}></Level_1>;
+      return <Level1 setLevel={setLevel}></Level1>;
     } else if (level === 2) {
-      return <Level_2 setLevel={setLevel}></Level_2>;
+      return <Level2 setLevel={setLevel}></Level2>;
     } else if (level === 3) {
-      return <Level_3 setLevel={setLevel}></Level_3>;
+      return <Level3 setLevel={setLevel}></Level3>;
     } else if (level === 4) {
-      return <Level_4 setLevel={setLevel}></Level_4>;
+      return <Level4 setLevel={setLevel}></Level4>;
     }
   };
   const domains = [

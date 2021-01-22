@@ -16,7 +16,7 @@ function LoginBox(props) {
   const [autoLogin, setAutoLogin] = useState(false);
 
   useEffect(() => {
-    if (id == "sini3181" && pw == "1234") {
+    if (id === "sini3181" && pw === "1234") {
       setResult(true);
       setUrl("./");
     } else {
