@@ -1,10 +1,108 @@
-import React from "react";
-import { Grid } from "@material-ui/core";
+import React, { useState } from "react";
+import { Grid, ButtonBase, Button, TextField } from "@material-ui/core";
 import PageFrame from "View/component/PageFrame";
-import PopularPostBox from "View/component/PopularPostBox";
 import queryString from "query-string";
+import ThumbUpIcon from "@material-ui/icons/ThumbUp";
+import ThumbDownIcon from "@material-ui/icons/ThumbDown";
+import VisibilityIcon from "@material-ui/icons/Visibility";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ExpandLessIcon from "@material-ui/icons/ExpandLess";
+
+const PostBox = (props) => {
+  return (
+    <div className="other-post">
+      <div className="other-post-field">{props.field}</div>
+      <div className="other-post-title">{props.title}</div>
+      <div className="other-post-comment">{`[${props.comment_count}]`}</div>
+      <div className="other-post-icon">
+        <ThumbUpIcon />
+      </div>
+      <div className="other-post-likes">{props.likes}</div>
+      <div className="other-post-time">{props.time}</div>
+    </div>
+  );
+};
+
+const CommentBox = (props) => {
+  return (
+    <div className="comment">
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          marginBottom: "1%",
+          marginTop: "2%",
+        }}
+      >
+        <div>익명1231</div>
+        <div
+          style={{
+            marginLeft: "2%",
+            color: "rgba(19, 19, 19, 0.7)",
+          }}
+        >
+          3 시간 전
+        </div>
+      </div>
+      <div
+        style={{
+          fontSize: "1.2rem",
+        }}
+      >
+        지구인이면 아이폰 쓰자
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "45%",
+          alignItems: "center",
+          justifyContent: "space-between",
+          marginBottom: "1%",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <ThumbUpIcon
+            style={{
+              marginRight: "8%",
+            }}
+          ></ThumbUpIcon>
+          <div>166</div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <ThumbDownIcon
+            style={{
+              marginRight: "15%",
+              alignSelf: "flex-end",
+            }}
+          />
+          <div>2</div>
+        </div>
+        <Button className="comment-button">답글 작성하기</Button>
+        <Button className="comment-button-more">
+          <ExpandMoreIcon />
+          답글 3개 보기
+        </Button>
+      </div>
+    </div>
+  );
+};
 
 function Post({ location }) {
+  const [sortBy, setSortBy] = useState("Update");
   const query = queryString.parse(location);
   //ViewModel에서 props로 전달 할 예정.
   const request_post = (post_id) => {
@@ -89,20 +187,95 @@ function Post({ location }) {
   const post = request_post(query.post_id);
   const comment = request_comment(query.post_id);
   const sorted_comment = sort_comment(comment);
-  const commentBoxArray = sorted_comment.map((e) => (
+  /*const commentBoxArray = sorted_comment.map((e) => (
     <PopularPostBox key={e.id} title={e.content}></PopularPostBox>
-  ));
+  ));*/
 
   return (
     <PageFrame>
-      <Grid>
-        <Grid>
-          <div>{post.title}</div>
-          <div>{post.updateTime ? post.update_date : post.create_date}</div>
-        </Grid>
-        <div>{post.content}</div>
+      <Grid className="post-box">
+        <div className="post-box-info">
+          <div>진영</div>
+          <div className="post-box-count" style={{ marginLeft: "auto" }}>
+            <ThumbUpIcon style={{ marginRight: "5%" }} />
+            <div>12,222</div>
+          </div>
+          <div className="post-box-count">
+            <VisibilityIcon style={{ marginRight: "5%" }} />
+            <div>9,999</div>
+          </div>
+          <div style={{ marginRight: "3%" }}>3 시간 전</div>
+        </div>
+        <div className="post-box-title">
+          <div>Title</div>
+          <div className="post-box-comments">[135]</div>
+        </div>
+        <div className="post-box-divider"></div>
+        <div className="contents-box"></div>
+        <div className="button-wrapper">
+          <Button className={"selected-button"}>
+            <div>좋아요 수</div>
+          </Button>
+          <Button className={"default-button"} style={{ marginLeft: "3%" }}>
+            <div>싫어요 수</div>
+          </Button>
+        </div>
       </Grid>
-      <Grid>{commentBoxArray}</Grid>
+      <Grid className="comment-option">
+        <div>댓글 136개</div>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <ButtonBase
+            className={sortBy === "Best" ? "selected-sort" : "select-sort"}
+            onClick={() => {
+              setSortBy("Best");
+            }}
+          >
+            인기순
+          </ButtonBase>
+          <ButtonBase
+            className={sortBy === "Update" ? "selected-sort" : "select-sort"}
+            onClick={() => {
+              setSortBy("Update");
+            }}
+          >
+            최신순
+          </ButtonBase>
+        </div>
+      </Grid>
+      <Grid className="comment-box-wrapper">
+        <div className="comment-input">
+          <div className="comment-input-id"> 아이디 </div>
+          <TextField
+            variant="outlined"
+            className="comment-input-box"
+            label="댓글 작성하기"
+          ></TextField>
+          <Button className="comment-input-button">등록</Button>
+        </div>
+        <div className="comment-box">
+          <CommentBox></CommentBox>
+          <CommentBox></CommentBox>
+          <CommentBox></CommentBox>
+          <Button className="comment-add-button">댓글 더 보기</Button>
+        </div>
+      </Grid>
+      <Grid className="post-box-wrapper">
+        <PostBox
+          field="아이폰"
+          title="아이폰이면 지구인 쓰자"
+          comment_count="136"
+          likes="12,222"
+          time="3 시간 전"
+        ></PostBox>
+        <PostBox
+          field="갤럭시"
+          title="한국인이면 갤럭시 쓰자"
+          comment_count="136"
+          likes="12,222"
+          time="3 시간 전"
+        ></PostBox>
+        <Button className="other-post-button">게시글 더 보기</Button>
+      </Grid>
     </PageFrame>
   );
 }

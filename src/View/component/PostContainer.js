@@ -1,7 +1,9 @@
 import React from "react";
 import { Button, ButtonBase } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 function PostContainer(props) {
+  let history = useHistory();
   return (
     <div className="today-post-container">
       <div className="option-box">
@@ -31,6 +33,9 @@ function PostContainer(props) {
               borderRadius: "25px",
               fontSize: "1rem",
               fontFamily: "NotoSansKR-Regular",
+            }}
+            onClick={() => {
+              history.push("./postedit");
             }}
           >
             게시글 작성하기

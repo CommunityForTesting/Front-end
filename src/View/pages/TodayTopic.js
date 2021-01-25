@@ -6,6 +6,7 @@ import { Button } from "@material-ui/core";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import UpFAB from "View/component/UpFAB";
+import { useHistory } from "react-router-dom";
 
 function TodayTopic() {
   const tmpTime = new Date().toLocaleTimeString().slice(2);
@@ -13,6 +14,8 @@ function TodayTopic() {
   const [field, setField] = useState("All");
   const [sortBy, setSortBy] = useState("Best");
   const [pageNumber, setPageNumber] = useState(1);
+
+  let history = useHistory();
 
   const countTime = () => {
     const tmpTime = new Date().toLocaleTimeString().slice(2);
@@ -196,6 +199,10 @@ function TodayTopic() {
             borderRadius: "25px",
             fontSize: "1rem",
             fontFamily: "NotoSansKR-Regular",
+          }}
+          onClick={() => {
+            history.push("./postedit");
+            window.scrollTo(0, 0);
           }}
         >
           게시글 작성하기
