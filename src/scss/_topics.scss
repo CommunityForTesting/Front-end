@@ -1,0 +1,97 @@
+.topics-container {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 2% 2% 0 2%;
+  margin-top: 4%;
+}
+.topics-option-box {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  width: 100%;
+  font-family: "NotoSansKR-Regular";
+  font-size: 1rem;
+  align-items: center;
+  .select-sort,
+  .selected-sort {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "NotoSansKR-Bold";
+    font-size: 1.1rem;
+    width: 90px;
+    height: 45px;
+  }
+  .selected-sort {
+    box-sizing: border-box;
+    border-bottom: 5px solid #323232;
+  }
+  .topics-search {
+    margin-left: auto;
+    font-size: 1.1rem;
+  }
+}
+
+.topics-box-container {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+  margin-bottom: 10%;
+  background-color: white;
+  box-shadow: 0px 3px 6px #00000029;
+  padding: 2% 2% 0 2%;
+  font-family: "NotoSansKR-Regular";
+  font-size: 1.1rem;
+  .topics-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 8%;
+    .topics-info {
+      display: flex;
+      flex-direction: row;
+      font-size: 1.3rem;
+      margin-top: 1%;
+      align-items: center;
+      margin-bottom: 3%;
+      .field {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 30%;
+        .field-winner {
+          margin-right: 12px;
+          width: 1.5em;
+          height: 1.5em;
+          background-image: url("../golden_crown.svg");
+          background-repeat: no-repeat;
+        }
+        .field-loser {
+          margin-right: 12px;
+          width: 1em;
+          height: 1em;
+        }
+        .field-title {
+          font-family: "NotoSansKR-Bold";
+        }
+        .field-likes {
+          margin-left: 12%;
+          color: #131313;
+        }
+      }
+      .counts {
+        display: flex;
+        flex-direction: row;
+        margin-left: 2%;
+      }
+    }
+  }
+}
