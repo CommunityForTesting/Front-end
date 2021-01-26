@@ -15,6 +15,7 @@ import {
   Topics,
   SetPw,
   PostEdit,
+  Vote,
 } from "pages";
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         <Route path="/topics" component={Topics} />
         <Route path="/setpw" component={SetPw} />
         <Route path="/postedit" component={PostEdit} />
+        <Route path="/vote" component={Vote} />
         <Route component={NotFound} />
       </Switch>
     </div>
